@@ -202,6 +202,7 @@
     margin-top: -40px;
     position: relative;
     width: 100%;
+    overflow-x: hidden;
 }
 .afterSlider img {
     width: 100%;
@@ -290,14 +291,19 @@
 .specialniAkce {
     padding: 50px 0;
 }
+
 .specialniAkce .aktualizaceInfo {
-    margin-top: 3px;
+    margin-top: 8px;
     margin-left: 25px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: almanach, sans-serif;
 }
 .specialniAkce .odpocet  {
     background-color: #d62b2b;
     color: #fff;
-    padding: 7px 14px;
+    padding: 3px 14px;
     margin-bottom: 0;
 }
 .specialniAkce .odpocet p {
@@ -308,11 +314,10 @@
     font-family: "Helvetica Neue",sans-serif;
     font-weight: 600;
 }
-
-/* specialni akce */
 .product-box {
     position: relative;
-    padding-top: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .product-box .hlavniFoto {
     height: 260px;
@@ -339,7 +344,6 @@
     color: #fff;
     margin-bottom: 0
 }
-
 .product-box .slevaSticker .slevaProcento {
     font-size: 9px;
     font-family: "Poppins", sans-serif;
@@ -427,4 +431,225 @@
 }
 .product-box .hodnoceni img {
     width: 12px;
+}
+.stars-container {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+}
+.starsGrey {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  color: lightgray;
+}
+.starsGold {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  color: gold;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+    .specialniAkce .aktualizaceInfo {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .specialniAkce .odpocet {
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+}
+
+/* blueStripe */
+.blueStripe {
+    padding: 44px 0 44px;
+}
+.blueStripe .bs-heading {
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.blueStripe .bs-desc {
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+@media (min-width: 1200px) and (max-width: 1550px) {
+    .blueStripeBox, .blueStripeRow {
+        height: 100%;
+    }
+    .blueStripe .bs-desc {
+        height: 50px;
+    }
+}
+/* hpmain-slider */
+.owl-theme .owl-nav {
+    margin-top: 0
+}
+.hpmain-slider .owl-nav.disabled {
+    display: block;
+}
+.hpmain-slider .owl-dots {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    right: 271px;
+}
+.hpmain-slider .owl-dots .owl-dot span {
+    width: 12px;
+    margin: 2px 4px 2px 4px;
+    height: 12px;
+    background: #ffffff38;
+}
+.hpmain-slider .owl-dots .owl-dot.active span {
+    width: 16px;
+    height: 16px;
+    margin: 0px 4px 0px 4px;
+    background: #fff;
+}
+.hpmain-slider .owl-nav .owl-prev {
+    position: absolute;
+    left: 270px;
+    top: 40%;
+    bottom: 0;
+    height: 40px;
+}
+.hpmain-slider .owl-nav .owl-next {
+    position: absolute;
+    right: 270px;
+    top: 40%;
+    bottom: 0;
+    height: 40px;
+}
+
+.hpmain-slider .owl-dots .owl-dot:focus,
+.hpmain-slider .owl-nav .owl-next:hover,
+.hpmain-slider .owl-nav .owl-next:focus,
+.hpmain-slider .owl-nav .owl-prev:hover,
+.hpmain-slider .owl-nav .owl-prev:focus {
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/* section */
+.sectionUnderline .section-heading {
+    margin-bottom: 0;
+}
+.sectionUnderline .underline {
+    border-top: 1px solid #ebebeb;
+}
+@media (max-width: 768px) {
+    .sectionUnderline .underline {
+        margin-top: 20px;
+    }
+}
+
+/* vybrane produkty */
+.vybraneProdukty .product-col {
+    border-left: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    margin-top: -1px;
+}
+.vybraneProdukty .row .product-col:nth-child(4n) {
+    border-right: 1px solid #ebebeb;
+}
+.vybraneProdukty .product-box .aktualniCena {
+    color: #139618;
+}
+.vybraneProdukty .hugeProduct .aktualniCena {
+    color: #F04220;
+}
+.vybraneProdukty .hugeProduct .hlavniFoto {
+    height: 517px;
+}
+.vybraneProdukty .hugeProduct-col {
+    border-left: 1px solid #ebebeb;
+}
+.vybraneProdukty .hugeProductBanner {
+    background-color: #EEAB10;
+}
+.hugeProductBanner {
+    padding: 24px;
+    margin-top: 75px;
+}
+.hugeProductBanner a {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 600;
+}
+.hugeProductBanner .firstBlock {
+    max-width: 175px;
+    display: inline-block;
+}
+.hugeProductBanner .secBlock {
+    font-size: 14px;
+}
+.hugeProductBanner .bannerImage {
+    margin-top: -29px;
+    margin-bottom: -29px;
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+    transition-duration: 0.1s;
+}
+.hugeProductBanner .bannerArrow {
+    width: 16px;
+    margin: -2px 0 0 5px;
+}
+.produktySwitch {
+    margin-bottom: -1px;
+}
+.hugeProductBanner a:hover {
+    text-decoration: none;
+}
+.produktySwitch a {
+    border: 1px solid #F3F3F3;
+    border-radius: 4px 4px 0px 0px;
+    padding: 12px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #25252561;
+    font-weight: 600;
+}
+.produktySwitch a.active {
+    background-color: #303E4F;
+    color: #fff;
+}
+.produktySwitch a:hover {
+    text-decoration: none;
+    background-color: #303E4F;
+    color: #fff;
+}
+
+/* fimry slider */
+.firmySlider {
+    padding: 0 0 50px 0;
+}
+.firmySlider .item {
+    border-left: 1px solid #ebebeb;
+}
+.firmySlider .item img {
+    max-height: 90px;
+    max-width: 140px;
+    object-fit: scale-down;
+    margin: auto;
+}
+
+/* prodavejte u nas */
+.prodavejteUnas {
+    padding: 53px 0
 }
