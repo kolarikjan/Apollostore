@@ -18,9 +18,22 @@
 <body>
     <div class="header bg-dark">
         <div class="top-header">
+            <div class="container borderBottom d-flex justify-content-between align-items-center pb-2 d-lg-none">
+                <div class="navbar-brand">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="navbar-cart">
+                    <a href="#">
+                        <img src="icons/cart.svg" alt="cart">
+                    </a>
+                    <span class="bg-white text-center">0</span>
+                </div>
+            </div>
             <div class="container">
-                <div class="d-flex flex-wrap flex-lg-nowrap align-items-center">
-                    <div class="navbar-brand">
+                <div class="d-flex flex-wrap flex-lg-nowrap align-items-center pt-3 pb-1">
+                    <div class="navbar-brand d-none d-lg-block">
                         <a href="#">
                             <img src="img/logo.png" alt="logo">
                         </a>
@@ -73,23 +86,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="navbar-cart">
+                    <div class="navbar-searchMobile d-lg-none ml-auto">
+                        <a href="#">
+                            <img src="icons/search2.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="navbar-cart d-none d-lg-block">
                         <a href="#">
                             <img src="icons/cart.svg" alt="cart">
                         </a>
                         <span class="bg-white text-center">0</span>
                     </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false">
-                        N
-                    </button>
                 </div>
             </div>
         </div>
         <div class="menu-header">
             <div class="container">
-                <nav class="navbar p-0 navbar-expand-lg">
+                <nav class="navbar p-0 navbar-expand">
                     <div class="collapse navbar-collapse" id="navbarMain">
-                        <ul class="navbar-nav flex-wrap mr-auto">
+                        <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Domov</a>
                             </li>
@@ -126,6 +141,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Záhrada</a>
                             </li>
+                            <li class="nav-item ml-xl-auto">
+                                <a class="nav-link nav-link--whitebg" href="#">Prodáejte u nás</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -149,76 +167,78 @@
         <img src="img/slider_bottom.png" alt="slider" class="img-fluid">
     </div>
     <div class="popularneKategorie">
-        <div class="container">
+        <div class="container container-heading">
             <h2 class="section-heading">Populárne kategórie</h2>
+        </div>
+        <div class="container">
             <div class="row kategorieRow">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/fashion.png" alt="kategorie">
                         <span>Fashion</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/bytove.png" alt="kategorie">
                         <span>Bytové doplňky</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/hracky.png" alt="kategorie">
                         <span>Hračky</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/sperky.png" alt="kategorie">
                         <span>Šperky</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/parfemy.png" alt="kategorie">
                         <span>Parfémy</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/elektro.png" alt="kategorie">
                         <span>Elektro</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/knihy.png" alt="kategorie">
                         <span>Knihy</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/hudebni.png" alt="kategorie">
                         <span>Hudební nástroje</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/svicky.png" alt="kategorie">
                         <span>Svíčky</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/skola.png" alt="kategorie">
                         <span>Škola</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie">
                         <img src="img/popularne_kategorie/zahrada.png" alt="kategorie">
                         <span>Zahrada</span>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
                     <a href="#" class="kategorie vsechnyKategorie">
                         <span>Zobrazit všechny produkty</span>
                     </a>
@@ -226,11 +246,13 @@
             </div>
         </div>
     </div>
-    <div class="specialniAkce sectionUnderline">
-        <div class="container">
+    <div class="specialniAkce sectionUnderline sectionUnderline--extended">
+        <div class="container container-heading">
             <div class="d-flex flex-column flex-md-row align-md-items-center">
-                <h2 class="section-heading">Speciální akce</h2>
-                <p class="aktualizaceInfo">Aktualizované denne o 09:00</p>
+                <div class="d-flex flex-column flex-md-row specialniAkce-heading">
+                    <h2 class="section-heading">Speciální akce</h2>
+                    <p class="aktualizaceInfo">Aktualizované denne o 09:00</p>
+                </div>
                 <div class="ml-md-auto">
                     <div class="odpocet">
                         <p>190 : 12 : 20 : 57</p>
@@ -270,7 +292,7 @@
                                 <a href="#" class="vyrobce">Gia Marguez</a>
                             </div>
                             <div class="prodane mt-3" style="background-size: 50%;">
-                                <p class="prodanePocet">Prodané 20/40</p>
+                                <p class="prodanePocet" style="margin-left: 50%;">Prodané 20/40</p>
                             </div>
                         </div>
                     </div>
@@ -453,7 +475,7 @@
             <div class="row">
                 <div class="col-12 col-xl-7">
                     <div class="row blueStripeRow">
-                        <div class="col-12 col-lg-6 col-xl-5 mb-3 mb-xl-0">
+                        <div class="col-12 col-lg-6 col-xl-5 mb-4 mb-xl-0">
                             <div class="blueStripeBox d-flex align-items-start">
                                 <img src="icons/konakt.svg" alt="kontakt" class="mr-3">
                                 <div class="d-flex flex-column">
@@ -462,7 +484,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 col-xl-7 mb-3 mb-xl-0">
+                        <div class="col-12 col-lg-6 col-xl-5 mb-4 mb-xl-0">
                             <div class="blueStripeBox d-flex align-items-start">
                                 <img src="icons/bezpecna_platba.svg" alt="kontakt" class="mr-3">
                                 <div class="d-flex flex-column">
@@ -475,7 +497,7 @@
                 </div>
                     <div class="col-12 col-xl-5">
                         <div class="row blueStripeRow">
-                            <div class="col-12 col-lg-6 col-xl-6 mb-3 mb-xl-0">
+                            <div class="col-12 col-lg-6 col-xl-6 mb-4 mb-xl-0">
                                 <div class="blueStripeBox d-flex align-items-start">
                                     <img src="icons/rychle_doruceni.svg" alt="kontakt" class="mr-3">
                                     <div class="d-flex flex-column">
@@ -484,7 +506,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 col-xl-6 mb-3 mb-xl-0">
+                            <div class="col-12 col-lg-6 col-xl-6 mb-4 mb-xl-0">
                                 <div class="blueStripeBox d-flex align-items-start">
                                     <img src="icons/vratenie_penazi.svg" alt="kontakt" class="mr-3">
                                     <div class="d-flex flex-column">
@@ -500,14 +522,26 @@
         </div>
     </div>
     <div class="specialniAkce vybraneProdukty sectionUnderline">
-        <div class="container">
-            <div class="d-flex flex-column flex-md-row">
-                <h2 class="section-heading">Vybrané produkty</h2>
-                <div class="ml-md-auto d-flex align-items-end">
+        <div class="container container-heading">
+            <div class="d-flex align-items-end">
+                <div class="specialniAkce-heading">
+                    <h2 class="section-heading">Vybrané produkty</h2>
+                </div>
+                <div class="d-none d-lg-flex ml-md-auto align-items-end">
                     <div class="produktySwitch">
                         <a href="#" class="active">Najnovšie</a>
                         <a href="#">Populárne</a>
                         <a href="#">Najpredávanejšie</a>
+                    </div>
+                </div>
+                <div class="dropdown-blue  ml-auto d-lg-none">
+                    <div class="dropdown-toggle" type="button" id="produktyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Filter
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="produktyDropdown">
+                        <a class="dropdown-item" href="#">Najnovšie</a>
+                        <a class="dropdown-item" href="#">Populárne</a>
+                        <a class="dropdown-item" href="#">Najpredávanejšie</a>
                     </div>
                 </div>
             </div>
@@ -524,7 +558,7 @@
                             <p class="selvaLabel">ZĽAVA</p>
                             <p class="slevaProcento">28%</p>
                         </div>
-                        <div class="productInfo d-flex justify-content-between">
+                        <div class="productInfo d-flex flex-column flex-xl-row justify-content-between">
                             <div>
                                 <p class="znacka">Výrobca</p>
                                 <a href="#" class="nazevProduktu">Elipa 2020 M1 iPed Pro (2018)</a>
@@ -549,7 +583,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hugeProductBanner">
+                    <div class="hugeProductBanner d-none d-sm-block">
                         <a href="#" class="d-flex flex-row align-items-center">
                             <span class="firstBlock">Záhradný nábytok teraz v predaji</span>
                             <img src="img/zidle.png" alt="zidle" class="bannerImage">
@@ -559,7 +593,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-8">
                     <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 product-col">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
                             <div class="product-box">
                                 <a href="#">
                                     <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
@@ -590,7 +624,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 product-col">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
                             <div class="product-box">
                                 <a href="#">
                                     <img src="img/vybrane_produkty/produkt-2.png" alt="produkt" class="img-fluid hlavniFoto">
@@ -621,7 +655,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 product-col">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
                             <div class="product-box">
                                 <a href="#">
                                     <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
@@ -652,7 +686,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 product-col">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
                             <div class="product-box">
                                 <a href="#">
                                     <img src="img/vybrane_produkty/produkt-2.png" alt="produkt" class="img-fluid hlavniFoto">
@@ -683,7 +717,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 product-col">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
                             <div class="product-box">
                                 <a href="#">
                                     <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
@@ -714,7 +748,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 product-col">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
                             <div class="product-box">
                                 <a href="#">
                                     <img src="img/vybrane_produkty/produkt-2.png" alt="produkt" class="img-fluid hlavniFoto">
@@ -745,7 +779,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 product-col">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
                             <div class="product-box">
                                 <a href="#">
                                     <img src="img/vybrane_produkty/produkt.png" alt="produkt" class="img-fluid hlavniFoto">
@@ -776,7 +810,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 product-col">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 product-col">
                             <div class="product-box">
                                 <a href="#">
                                     <img src="img/vybrane_produkty/produkt-2.png" alt="produkt" class="img-fluid hlavniFoto">
@@ -812,6 +846,15 @@
             </div>
         </div>
         <div class="underline"></div>
+        <div class="hugeProductBanner d-sm-none">
+            <a href="#" class="d-flex flex-row align-items-center">
+                <div class="d-flex flex-column">
+                    <span class="firstBlock">Záhradný nábytok teraz v predaji</span>
+                    <span class="secBlock mt-3">Zobraziť <img src="icons/hugeproduct-arrow.svg" alt="arrow" class="bannerArrow"></span>
+                </div>
+                <img src="img/zidle.png" alt="zidle" class="bannerImage">
+            </a>
+        </div>
     </div>
     <div class="firmySlider">
         <div class="owl-carousel owl-theme firmy-slider">
@@ -869,10 +912,12 @@
         </div>
     </div>
     <div class="novinkySection sectionUnderline">
-        <div class="container">
-            <div class="d-flex flex-column flex-md-row align-md-items-center">
-                <h2 class="section-heading">Novinky</h2>
-                <div class="ml-md-auto d-flex">
+        <div class="container container-heading">
+            <div class="d-flex align-items-center">
+                <div class="specialniAkce-heading">
+                    <h2 class="section-heading">Novinky</h2>
+                </div>
+                <div class="ml-auto d-flex">
                     <a class="novinkyPrev mr-1">
                         <img src="icons/news_slider-left.svg" alt="arrow">
                     </a>

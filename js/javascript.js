@@ -13,16 +13,30 @@ $(document).ready(function() {
         nav:false,
         dots:false,
         items:5,
-        stagePadding: 275,
         responsive:{
             0:{
                 items:1,
+                stagePadding: 80,
+            },
+            400:{
+                items:1,
+                stagePadding: 100,
+            },
+            500:{
+                items:1,
+                stagePadding: 130,
+            },
+            576:{
+                items:1,
+                stagePadding: 200,
             },
             993:{
                 items:2,
+                stagePadding: 275,
             },
             1200:{
                 items:4,
+                stagePadding: 275,
             }
         }
     });
@@ -35,6 +49,10 @@ $(document).ready(function() {
         responsive:{
             0:{
                 items:1,
+                stagePadding: 30,
+            },
+            576:{
+                items:2,
             },
             993:{
                 items:4,

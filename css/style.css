@@ -20,6 +20,12 @@
 }
 
 /* header */
+.header .borderBottom {
+    border-bottom: 1px solid #455261;
+}
+.header .navbar-nav {
+    width: 100%;
+}
 .header .navbar-brand {
     margin-right: 35px;
 }
@@ -191,9 +197,21 @@
     border-left: 1px solid #455261;
     margin-left: -1px;
     margin-top: -1px;
+    height: 100%;
 }
 .header .navbar .nav-link:hover {
     background-color: #455261;
+}
+.header .navbar .nav-link--whitebg {
+    background-color: #455261;
+}
+@media (max-width: 993px) {
+    .navbar-search {
+        display: none;
+    }
+    .header .navbar-language .current-language {
+        margin-left: 0;
+    }
 }
 
 /* homepage slider */
@@ -285,11 +303,39 @@
     margin-right: -7px;
     margin-left: -7px;
 }
-.popularneKategorie .kategorieRow .col-12 {
+.popularneKategorie .kategorieRow .col-6 {
     padding-right: 7px;
     padding-left: 7px;
 }
-
+.popularneKategorie .kategorie img {
+    max-width: 56px;
+    max-height: 56px;
+}
+@media (max-width: 576px) {
+    .popularneKategorie {
+        padding: 15px 0 40px;
+    }
+    .popularneKategorie .kategorieRow .col-6:nth-child(odd) {
+        padding-right: 5px;
+        padding-left: 0;
+    }
+    .popularneKategorie .kategorieRow .col-6:nth-child(even) {
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    .popularneKategorie .kategorie {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .popularneKategorie .kategorie img {
+        max-width: 47px;
+        max-height: 47px;
+    }
+    .popularneKategorie .vsechnyKategorie {
+        text-align: left;
+        padding: 5px 10px;
+    }
+}
 /* specialni akce */
 .specialniAkce {
     padding: 50px 0;
@@ -465,6 +511,35 @@
         width: fit-content;
     }
 }
+@media (max-width: 576px) {
+    .sectionUnderline .section-heading {
+        margin: 0;
+        border-bottom: 0;
+    }
+    .specialniAkce .aktualizaceInfo {
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+    .specialniAkce-heading {
+        width: fit-content;
+        margin: 0 15px;
+        border-bottom: 5px solid #EEAB10;
+    }
+    .sectionUnderline--extended .underline {
+        border-top: 0 !important;
+    }
+    .specialniAkce .odpocet {
+        margin: 10px 15px;
+        position: absolute;
+        padding: 7px 14px;
+    }
+    .sectionUnderline--extended .underline {
+        margin-top: 43px !important;
+    }
+    .specialniAkce .odpocet p {
+        font-size: 24px;
+    }
+}
 
 /* blueStripe */
 .blueStripe {
@@ -491,6 +566,11 @@
     }
     .blueStripe .bs-desc {
         height: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .blueStripe {
+        padding: 44px 0 25px;
     }
 }
 /* hpmain-slider */
@@ -550,9 +630,33 @@
 .sectionUnderline .underline {
     border-top: 1px solid #ebebeb;
 }
+@media (max-width: 993px) {
+    .hpmain-slider .owl-dots {
+        right: 0;
+        left: 0;
+        bottom: 50px;
+    }
+    .owl-theme .owl-nav {
+        display: none;
+    }
+    .homepageSlider .item img {
+        min-height: 200px;
+        object-fit: cover;
+    }
+}
 @media (max-width: 768px) {
     .sectionUnderline .underline {
         margin-top: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .sectionUnderline .container-heading {
+        padding: 0;
+        border-bottom: 2px solid #E3E3E3;
+    }
+    .section-heading.sectionUnderline {
+        font-size: 27px;
+        margin: 0 15px;
     }
 }
 
@@ -562,20 +666,63 @@
     border-top: 1px solid #ebebeb;
     margin-top: -1px;
 }
-.vybraneProdukty .row .product-col:nth-child(4n) {
-    border-right: 1px solid #ebebeb;
+@media (min-width: 1200px) {
+    .vybraneProdukty .row .product-col:nth-child(4n) {
+        border-right: 1px solid #ebebeb;
+    }
+}
+@media (min-width: 993px) {
+    .vybraneProdukty .row .product-col:nth-child(3n) {
+        border-right: 1px solid #ebebeb;
+    }
+    .vybraneProdukty .row .product-col:last-of-type {
+        border-right: 1px solid #ebebeb;
+    }
+
+    .vybraneProdukty .hugeProduct-col {
+        border-left: 1px solid #ebebeb;
+    }
+}
+@media (min-width: 576px) {
+    .vybraneProdukty .row .product-col:nth-child(2n) {
+        border-right: 1px solid #ebebeb;
+    }
 }
 .vybraneProdukty .product-box .aktualniCena {
     color: #139618;
 }
-.vybraneProdukty .hugeProduct .aktualniCena {
-    color: #F04220;
+.dropdown-blue {
+    border: 1px solid #F3F3F3;
+    border-radius: 4px 4px 0px 0px;
+    padding: 12px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    background-color: #303E4F;
+    color: #fff;
 }
-.vybraneProdukty .hugeProduct .hlavniFoto {
-    height: 517px;
+.dropdown-blue .dropdown-menu {
+    margin-top: 17px;
+    margin-left: -11px;
+    padding: 10px;
+    border: 0;
+    -webkit-box-shadow: 0px 0px 8px 0px rgb(89 101 114 / 15%);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(89,101,114,0.15);
+    box-shadow: 0px 0px 8px 0px rgb(89 101 114 / 15%);
+    border-radius: 5px;
 }
-.vybraneProdukty .hugeProduct-col {
-    border-left: 1px solid #ebebeb;
+.dropdown-blue .dropdown-item {
+    padding: 0 10px;
+    color: #596572;
+    font-size: 14px;
+    line-height: 30px;
+}
+.dropdown-blue .dropdown-item:hover {
+    color: #fff;
+    background: #303E4F;
+    border-radius: 5px;
 }
 .vybraneProdukty .hugeProductBanner {
     background-color: #EEAB10;
@@ -637,6 +784,60 @@
     background-color: #303E4F;
     color: #fff;
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+    .hugeProductBanner .bannerImage {
+        max-width: 70px;
+    }
+}
+@media (min-width: 576px) {
+    .product-box .prodanePocet {
+        margin-left: 0 !important;
+    }
+}
+@media (min-width: 576px) {
+    .vybraneProdukty .hugeProduct .aktualniCena {
+        color: #F04220;
+    }
+    .vybraneProdukty .hugeProduct .hlavniFoto {
+        height: 517px;
+    }
+}
+@media (max-width: 576px) {
+    .product-box .nazevProduktu {
+        font-size: 16px;
+    }
+    .product-box .aktualniCena {
+        font-size: 20px;
+    }
+    .product-box .prodanePocet {
+        padding: 3px 0;
+        font-size: 10px;
+    }
+    .product-box .slevaSticker .selvaLabel {
+        font-size: 13px;
+    }
+    .product-box .slevaSticker {
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+    }
+    .product-box .slevaSticker .slevaProcento {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .specialniAkce .dropdown-blue {
+        margin-right: 15px;
+    }
+    .specialniAkce .dropdown-blue .dropdown-menu {
+        margin-left: -97px;
+    }
+    .vybraneProdukty .product-box .aktualniCena {
+        color: #BF0E07;
+    }
+    .hugeProductBanner {
+        padding: 24px 16px;
+    }
+}
 
 /* fimry slider */
 .firmySlider {
@@ -656,7 +857,7 @@
 .prodavejteUnas {
     padding: 53px 0;
     background-image: url("../img/prodavejteunas.png");
-    background-position: left center;
+    background-position: right 67% center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -690,6 +891,35 @@
     text-decoration: none;
     color: #fff;
     background-color: #eeab10d1;
+}
+@media (max-width: 993px) {
+    .prodavejteUnas {
+        background-position: right center;
+    }
+}
+@media (max-width: 576px) {
+    .prodavejteUnas {
+        background-image: url("../img/prodavejteunas2.png");
+        background-position: top center;
+        background-size: 100%;
+        padding: 330px 0 50px;
+    }
+    .prodavejteUnas h3 {
+        font-size: 28px;
+        line-height: 37px;
+    }
+    .sectionUnderline .underline {
+        border-top: 0;
+    }
+    .vybraneProdukty .product-col {
+        border-top: 0;
+        border-left: 0;
+    }
+}
+@media (max-width: 476px) {
+    .prodavejteUnas {
+        padding: 230px 0 50px;
+    }
 }
 
 /* novinky */
@@ -734,6 +964,11 @@
     font-size: 11px;
     line-height: 28px;
     font-weight: 400;
+}
+@media (max-width: 576px) {
+    .newsSlider .owl-stage {
+        padding-left: 0 !important;
+    }
 }
 
 /* footer */
@@ -794,6 +1029,16 @@
     font-family: "Poppins", sans-serif;
     font-size: 11px;
     font-weight: 300;
+}
+@media (max-width: 993px) {
+    .footer h3 {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .footer .vsetkykatBox {
+        max-width: 80%;
+    }
 }
 
 /* copyritght */
